@@ -6,4 +6,4 @@ Các bước xử lý data:
   - Convert vào thư viện pandas.
   - Encoder label thành kiểu int.
   - Tách các từ thành các input_ids, thêm token [cls] vào đầu và token [sep] vào cuối (đã được mã hóa thành input_ids), cắt dữ liệu đưa vào dựa vào max length 
-  và khởi tạo attention mask sau đó đưa vào model để thực hiện training. [class SentimentDataset(Dataset)]
+  và khởi tạo attention mask sau đó đưa vào model để thực hiện training. [tokenizer.encode_plus]
